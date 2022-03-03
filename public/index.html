@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Productos</h1>
+    <a href="./api/products">Ver todos los productos</a><br><br>
+    <div class="container">
+        <form action="./api/products" method="post" id="frmNewProduct">
+            <fieldset>
+                <legend>Agregar nuevo producto</legend>
+                <label for="title">Título</label>
+                <input type="text" name="title" >
+                <br><br>
+                <label for="price">Precio</label>
+                <input type="number" name="price" step="any" >
+                <br><br>
+                <label for="thumbnail">URL</label>
+                <input type="url" name="thumbnail" >
+                <br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+    <div id="productsGrid"></div>
+    <div class="container" id="chatMsgs"></div>
+    <div class="container">
+        <form action="#" method="post" id="frmChat">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required>
+            <input type="text" name="msg" placeholder="Mensaje..." required>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="./scripts/mainclient.js"></script>
+</body>
+</html>

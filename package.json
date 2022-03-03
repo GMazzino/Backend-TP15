@@ -1,0 +1,21 @@
+{
+  "name": "tp-clase-15",
+  "version": "1.0.0",
+  "description": "TP Clase 15 - Backend - CoderHouse",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Gustavo Mazzino",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.8",
+    "date-and-time": "^2.2.1",
+    "express": "^4.17.3",
+    "knex": "^1.0.3",
+    "mysql": "^2.18.1",
+    "node-gyp": "^8.4.1",
+    "socket.io": "^4.4.1"
+  }
+}
